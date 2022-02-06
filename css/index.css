@@ -1,0 +1,40 @@
+
+body {
+    background-color: lightgray;
+}
+
+.label {
+    color: rgb(30, 30, 30);
+    font-size: 25pt;
+    font-weight: bolder;
+    margin-top: 50px;
+    margin-left: 20%;
+    padding: 10px;
+}
+
+.deck {
+    display: flex;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card {
+    background-color: bisque;
+    width: 300px; height: 150px;
+    margin: auto;
+    border: 2px solid brown;
+    padding: 15px;
+}
+
+.card img {
+    height: 100%;
+    display: block;
+    margin: auto;
+}
+
+.card:hover {
+    width: 360px;
+    height: 180px;
+    box-shadow: 10px 15px 5px rgba(10, 10, 10, 0.3);
+}
