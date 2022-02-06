@@ -38,3 +38,21 @@ body {
     height: 180px;
     box-shadow: 10px 15px 5px rgba(10, 10, 10, 0.3);
 }
+
+.rivalCard {
+    background-color: rgb(248, 172, 172);
+    width: 300px; height: 150px;
+    margin: auto;
+    border: 2px solid rgb(200, 130, 130);
+    padding: 15px;
+}
+
+.rivalCard img {
+    height: 100%;
+    display: block;
+    margin: auto;
+}
+
+.rivalCard:hover {
+    box-shadow: 10px 15px 5px rgba(10, 10, 10, 0.3);   
+}
