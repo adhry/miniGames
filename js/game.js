@@ -5,19 +5,52 @@ $(document).ready(function() {
     $("div#rock").click(function(){
         $("div#paper").hide()
         $("div#scissors").hide()
+
         let n = Math.floor((Math.random() * 3) + 1);
-        if (n === 1) {
+
+        if (n === 1) {  // Draw
             $("div#rival img").attr("src","img/rock.png")
-        } else if (n === 3) {
+            alert("Draw :0");
+        } else if (n === 3) {  // Lose
             $("div#rival img").attr("src","img/paper.png")
-        } else {
+            alert("You lose :(");
+        } else {  // Win
             $("div#rival img").attr("src","img/scissors.png")
+            alert("You win!! Congratulations! :D");
         }
     });
     $("div#paper").click(function(){
-        alert("Paper!!");
+        $("div#rock").hide()
+        $("div#scissors").hide()
+
+        let n = Math.floor((Math.random() * 3) + 1);
+
+        if (n === 1) {  // Win
+            $("div#rival img").attr("src","img/rock.png")
+            alert("You win!! Congratulations! :D");
+        } else if (n === 3) {  // Draw
+            $("div#rival img").attr("src","img/paper.png")
+            alert("Draw :0");
+        } else {  // Lose
+            $("div#rival img").attr("src","img/scissors.png")
+            alert("You lose :(");
+        }
     });
     $("div#scissors").click(function(){
-        alert("Scissors!!");
+        $("div#rock").hide()
+        $("div#paper").hide()
+
+        let n = Math.floor((Math.random() * 3) + 1);
+
+        if (n === 1) {  // Lose
+            $("div#rival img").attr("src","img/rock.png")
+            alert("You lose :(");
+        } else if (n === 3) {  // Win
+            $("div#rival img").attr("src","img/paper.png")
+            alert("You win!! Congratulations! :D");
+        } else {  // Draw
+            $("div#rival img").attr("src","img/scissors.png")
+            alert("Draw :0");
+        }
     })
 });
